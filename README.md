@@ -245,7 +245,7 @@
         # start the fully auto exploration node
         roslaunch mbot_explore rrt_exploration.launch  
         ```  
-      <!-- <div style="display: flex; flex-wrap: wrap;">
+     <div style="display: flex; flex-wrap: wrap;">
       <div style="flex-basis: 50%; text-align:center;">
         <img src="videos/gmapping.gif" >
         <p>SLAM建图</p>
@@ -262,11 +262,11 @@
         <img src="videos/full-exploration.gif" >
         <p>全自主探索</p>
       </div>
-    </div> -->
+    
 
        
 <!-- 第一行 -->
-  <div style="display: flex; flex-direction: row; justify-content: center;">
+  <!-- <div style="display: flex; flex-direction: row; justify-content: center;">
     <div>
       <video width="320" height="240" controls>
         <source src="videos/gmapping.mp4" type="video/mp4">
@@ -279,10 +279,10 @@
       </video>
         <p>move_base导航</p>
     </div>
-  </div>
+  </div> -->
 
 <!-- 第二行 -->
-<div style="display: flex; flex-direction: row; justify-content: center;">
+<!-- <div style="display: flex; flex-direction: row; justify-content: center;">
   <div>
     <video width="320" height="240" controls>
       <source src="videos/semi-exploration.mp4" type="video/mp4">
@@ -295,7 +295,7 @@
     </video>
     <p>全自主探索</p>
   </div>
-</div>
+</div> -->
 
 
 
