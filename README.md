@@ -200,7 +200,7 @@
 </p>
 
 2. 功能和操作案例
-   - ## **SLAM建图功能案例**
+   - **SLAM建图功能案例**
      - 操作指令
        ```bash
        # start the gazebo simulation
@@ -216,57 +216,57 @@
         rosrun map_server map_saver -f match_gmapping
        ```
 
-     - **导航功能案例**
-        - 操作指令
-          ```bash
-          # start the gazebo simulation
-          roslaunch limo_gazebo_sim limo_four_diff.launch 
+   - **导航功能案例**
+      - 操作指令
+        ```bash
+        # start the gazebo simulation
+        roslaunch limo_gazebo_sim limo_four_diff.launch 
 
-          # start the navigation node
-          roslaunch mbot_navigation nav_match_demo.launch 
-          ``` 
+        # start the navigation node
+        roslaunch mbot_navigation nav_match_demo.launch 
+        ``` 
 
-      - **半自主探索案例**
-        - 操作指令
-          ```bash
-          # start the gazebo simulation
-          roslaunch limo_gazebo_sim limo_four_diff.launch 
+    - **半自主探索案例**
+      - 操作指令
+        ```bash
+        # start the gazebo simulation
+        roslaunch limo_gazebo_sim limo_four_diff.launch 
 
-          # start the semi-auto exploration node
-          roslaunch mbot_navigation exploring_slam_demo.launch  
-          ```
+        # start the semi-auto exploration node
+        roslaunch mbot_navigation exploring_slam_demo.launch  
+        ```
 
-      - **全自主探索案例**
-        - 操作指令
-          ```bash
-          # start the gazebo simulation
-          roslaunch limo_gazebo_sim limo_four_diff.launch 
+    - **全自主探索案例**
+      - 操作指令
+        ```bash
+        # start the gazebo simulation
+        roslaunch limo_gazebo_sim limo_four_diff.launch 
 
-          # start the fullly auto exploration node
-          roslaunch mbot_explore rrt_exploration.launch  
-          ```  
-        <div style="display: flex; flex-wrap: wrap;">
-        <div style="flex-basis: 50%; text-align:center;">
-          <img src="videos/gmapping.gif" >
-          <p>SLAM建图</p>
-        </div>
-        <div style="flex-basis: 50%; text-align:center;">
-          <img src="videos/navigation.gif" >
-          <p>move_base导航</p>
-        </div>
-        <div style="flex-basis: 50%; text-align:center;">
-          <img src="videos/semi-exploration.gif" >
-          <p>半自主探索</p>
-        </div>
-        <div style="flex-basis: 50%; text-align:center;">
-          <img src="videos/full-exploration.gif" >
-          <p>全自主探索</p>
-        </div>
+        # start the fully auto exploration node
+        roslaunch mbot_explore rrt_exploration.launch  
+        ```  
+      <!-- <div style="display: flex; flex-wrap: wrap;">
+      <div style="flex-basis: 50%; text-align:center;">
+        <img src="videos/gmapping.gif" >
+        <p>SLAM建图</p>
       </div>
+      <div style="flex-basis: 50%; text-align:center;">
+        <img src="videos/navigation.gif" >
+        <p>move_base导航</p>
+      </div>
+      <div style="flex-basis: 50%; text-align:center;">
+        <img src="videos/semi-exploration.gif" >
+        <p>半自主探索</p>
+      </div>
+      <div style="flex-basis: 50%; text-align:center;">
+        <img src="videos/full-exploration.gif" >
+        <p>全自主探索</p>
+      </div>
+    </div> -->
 
        
 <!-- 第一行 -->
-  <!-- <div style="display: flex; flex-direction: row; justify-content: center;">
+  <div style="display: flex; flex-direction: row; justify-content: center;">
     <div>
       <video width="320" height="240" controls>
         <source src="videos/gmapping.mp4" type="video/mp4">
@@ -279,10 +279,10 @@
       </video>
         <p>move_base导航</p>
     </div>
-  </div> -->
+  </div>
 
 <!-- 第二行 -->
-<!-- <div style="display: flex; flex-direction: row; justify-content: center;">
+<div style="display: flex; flex-direction: row; justify-content: center;">
   <div>
     <video width="320" height="240" controls>
       <source src="videos/semi-exploration.mp4" type="video/mp4">
@@ -295,7 +295,7 @@
     </video>
     <p>全自主探索</p>
   </div>
-</div> -->
+</div>
 
 
 
