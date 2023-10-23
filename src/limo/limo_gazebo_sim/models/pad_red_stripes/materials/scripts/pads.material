@@ -1,0 +1,22 @@
+material vrc/pad_red_stripes
+{
+  receive_shadows on
+	technique
+	{
+		pass
+		{
+
+                        ambient .8 .8 .8 1.000000
+                        diffuse .5 .5 .5 1.000000
+                        specular 1 1 1 5.00000 
+                        emissive 0.01 0.01 0.01  1.000000
+
+			texture_unit
+			{
+				texture pad_red_stripes.png
+				filtering anistropic
+        max_anisotropy 16
+			}
+		}
+	}
+}

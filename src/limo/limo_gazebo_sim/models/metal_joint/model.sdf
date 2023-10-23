@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="metal_joint">
+    <static>true</static>
+    <link name="link">
+     <pose frame=''>0 0 0.25 0 -0 0</pose>
+      <collision name="metal_joint_01">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+       <visual name='visual_metal_joint_0'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://metal_joint/materials/scripts</uri>
+            <uri>model://metal_joint/materials/textures</uri>
+            <name>metal_joint</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

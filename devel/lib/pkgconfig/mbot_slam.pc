@@ -1,0 +1,8 @@
+prefix=/home/cjf/limo_ws/devel
+
+Name: mbot_slam
+Description: Description of mbot_slam
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+limo/limo_description:limo/limo_gazebo_sim:limo/teleop_twist_keyboard:mbot_explore:mbot_navigation:mbot_recognition:mbot_slam
+-DCATKIN_DEVEL_PREFIX=/home/cjf/limo_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cjf/limo_ws/install -G Unix Makefiles

@@ -1,0 +1,27 @@
+material metal_joint
+{
+  receive_shadows on
+  technique
+  {
+    pass
+    {
+      ambient 1 1 1 1
+      diffuse 1 1 1 1
+
+      texture_unit
+      {
+        // texture file
+        texture metal_seamed.jpg
+        filtering anistorpic
+        max_anisotropy 16
+        // scale unevenly if body is not a square
+        // use the scale to adjust the size of the texture
+        // texture tiled 2 times in the surface (1/2 = 0.5)
+        // texture tiled 10 times in the surface (1/10 = 0.1)
+        scale 1.0 0.1 
+        // uncomment to rotate angle in degree (CCW)
+        // rotate 90
+      }
+    }
+  }
+}

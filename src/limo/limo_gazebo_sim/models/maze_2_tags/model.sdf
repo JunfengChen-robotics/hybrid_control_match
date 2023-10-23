@@ -1,0 +1,3072 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+
+ <model name="tag36h11_maze_2">
+    <static>true</static>
+    <link name='tags'>
+
+<?ignore>
+     <collision name='collision'>
+     <!-- In Gazebo 7 there appears to be a bug that causes an inconsistency between the visual collision on a plane and the collision phisics -->
+  <!-- <pose>-6 1.5 1.5 0 1.5708 0</pose> --> <!-- correct pose for the visualization of collisions, active by selecting "view -> collisions" -->
+       <pose>1.0 1.0 -5.8 0 1.5708 0</pose> <!-- correct pose for the simulated collision physics -->
+        <geometry>
+          <plane>
+            <normal>1 0 0</normal>
+            <size>2 2</size>
+          </plane>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.2</mu>
+              <mu2>.2</mu2>
+            </ode>
+          </friction>
+        </surface>
+     </collision>
+<?>
+
+<!-- Row 0, outer wall along increasing x axis (y:0) -->
+<!-- Tags 0 to 9 -->
+      <visual name='tag36_11_00000'>
+        <pose>0.5 0.011 0.3 1.5708 0 3.14159</pose> <!-- Y: sets yaw or direction towards the ar tag is pointing to -->
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00000</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00001'>
+        <pose>1.5 0.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00001</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00002'>
+        <pose>2.5 0.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00002</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00003'>
+        <pose>3.5 0.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00003</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00004'>
+        <pose>4.5 0.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00004</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00005'>
+        <pose>5.5 0.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00005</name>
+          </script>
+        </material>
+      </visual>
+
+<!-- Row 1, first row of panels along increasing x axis (y:1) -->
+      <!-- Tags 10 to 29 -->
+      <!-- Panel 1 in Row 1 -->
+<!-- 
+      <visual name='tag36_11_00010'>
+        <pose>0.5 1.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00010</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00011'>
+        <pose>0.5 0.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00011</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 2 in Row 1 -->
+
+      <visual name='tag36_11_00012'>
+        <pose>1.5 1.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00012</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00013'>
+        <pose>1.5 0.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00013</name>
+          </script>
+        </material>
+      </visual>
+
+
+      <!-- Panel 3 in Row 1 -->
+
+      <visual name='tag36_11_00014'>
+        <pose>2.5 1.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00014</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00015'>
+        <pose>2.5 0.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00015</name>
+          </script>
+        </material>
+      </visual>
+
+
+      <!-- Panel 4 in Row 1 -->
+
+      <visual name='tag36_11_00016'>
+        <pose>3.5 1.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00016</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00017'>
+        <pose>3.5 0.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00017</name>
+          </script>
+        </material>
+      </visual>
+
+
+     <!-- Panel 5 in Row 1 -->
+      <visual name='tag36_11_00018'>
+        <pose>4.5 1.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00018</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00019'>
+        <pose>4.5 0.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00019</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 6 in Row 1 -->
+<!--
+      <visual name='tag36_11_00020'>
+        <pose>5.5 1.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00020</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00021'>
+        <pose>5.5 0.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00021</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+<!-- Row 2, second row of panels along increasing x axis (y:2) -->
+      <!-- Tags 30 to 49 -->
+      <!-- Panel 1 in Row 2 -->
+
+      <visual name='tag36_11_00030'>
+        <pose>0.5 2.011 0.3 1.5708 0 3.14159</pose> 
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00030</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00031'>
+        <pose>0.5 1.989 0.3 1.5708 0 0</pose> 
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00031</name>
+          </script>
+        </material>
+      </visual>
+
+
+      <!-- Panel 2 in Row 2 -->
+<!--
+      <visual name='tag36_11_00032'>
+        <pose>1.5 2.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00032</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00033'>
+        <pose>1.5 1.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00033</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 3 in Row 2 -->
+<!--
+      <visual name='tag36_11_00034'>
+        <pose>2.5 2.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00034</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00035'>
+        <pose>2.5 1.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00035</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 4 in Row 2 -->
+
+      <visual name='tag36_11_00036'>
+        <pose>3.5 2.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00036</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00037'>
+        <pose>3.5 1.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00037</name>
+          </script>
+        </material>
+      </visual>
+
+
+     <!-- Panel 5 in Row 2 -->
+<!-- 
+      <visual name='tag36_11_00038'>
+        <pose>4.5 2.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00038</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00039'>
+        <pose>4.5 1.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00039</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 6 in Row 2 -->
+<!--
+      <visual name='tag36_11_00040'>
+        <pose>5.5 2.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00040</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00041'>
+        <pose>5.5 1.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00041</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+<!-- Row 3, third row of panels along increasing x axis (y:3) -->
+      <!-- Tags 50 to 69 -->
+      <!-- Panel 1 in Row 3 -->
+<!--
+      <visual name='tag36_11_00050'>
+        <pose>0.5 3.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00050</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00051'>
+        <pose>0.5 2.989 0.3 1.5708 0 0</pose> 
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00051</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 2 in Row 3 -->
+
+      <visual name='tag36_11_00052'>
+        <pose>1.5 3.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00052</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00053'>
+        <pose>1.5 2.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00053</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 3 in Row 3 -->
+      <visual name='tag36_11_00054'>
+        <pose>2.5 3.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00054</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00055'>
+        <pose>2.5 2.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00055</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 4 in Row 3 -->
+<!--
+      <visual name='tag36_11_00056'>
+        <pose>3.5 3.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00056</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00057'>
+        <pose>3.5 2.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00057</name>
+          </script>
+        </material>
+      </visual>
+-->
+     <!-- Panel 5 in Row 3 -->
+
+      <visual name='tag36_11_00058'>
+        <pose>4.5 3.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00058</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00059'>
+        <pose>4.5 2.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00059</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 6 in Row 3 -->
+<!-- 
+      <visual name='tag36_11_00060'>
+        <pose>5.5 3.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00060</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00061'>
+        <pose>5.5 2.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00061</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+<!-- Row 4, fourth row of panels along increasing x axis (y:4) -->
+      <!-- Tags 70 to 89 -->
+      <!-- Panel 1 in Row 4 -->
+<!--
+      <visual name='tag36_11_00070'>
+        <pose>0.5 4.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00070</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00071'>
+        <pose>0.5 3.989 0.3 1.5708 0 0</pose> 
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00071</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 2 in Row 4 -->
+ <!--
+      <visual name='tag36_11_00072'>
+        <pose>1.5 4.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00072</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00073'>
+        <pose>1.5 3.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00073</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 3 in Row 4 -->
+ <!--
+      <visual name='tag36_11_00074'>
+        <pose>2.5 4.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00074</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00075'>
+        <pose>2.5 3.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00075</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 4 in Row 4 -->
+ <!--
+      <visual name='tag36_11_00076'>
+        <pose>3.5 4.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00076</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00077'>
+        <pose>3.5 3.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00077</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+     <!-- Panel 5 in Row 4 -->
+
+      <visual name='tag36_11_00078'>
+        <pose>4.5 4.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00078</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00079'>
+        <pose>4.5 3.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00079</name>
+          </script>
+        </material>
+      </visual>
+
+
+      <!-- Panel 6 in Row 4 -->
+
+      <visual name='tag36_11_00080'>
+        <pose>5.5 4.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00080</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00081'>
+        <pose>5.5 3.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00081</name>
+          </script>
+        </material>
+      </visual>
+
+<!-- Row 5, fifth row of panels along increasing x axis (y:5) -->
+      <!-- Tags 90 to 109 -->
+      <!-- Panel 1 in Row 5 -->
+<!-- 
+      <visual name='tag36_11_00090'>
+        <pose>0.5 5.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00090</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <visual name='tag36_11_00091'>
+        <pose>0.5 4.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00091</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 2 in Row 5 -->
+<!--
+      <visual name='tag36_11_00092'>
+        <pose>1.5 5.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00092</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <visual name='tag36_11_00093'>
+        <pose>1.5 4.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00093</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 3 in Row 5 -->
+<!--
+      <visual name='tag36_11_00094'>
+        <pose>2.5 5.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00094</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <visual name='tag36_11_00095'>
+        <pose>2.5 4.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00095</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 4 in Row 5 -->
+<!--
+      <visual name='tag36_11_00096'>
+        <pose>3.5 5.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00096</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <visual name='tag36_11_00097'>
+        <pose>3.5 4.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00097</name>
+          </script>
+        </material>
+      </visual>
+
+     <!-- Panel 5 in Row 5 -->
+<!--
+      <visual name='tag36_11_00098'>
+        <pose>4.5 5.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00098</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <visual name='tag36_11_00099'>
+        <pose>4.5 4.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00099</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 6 in Row 5 -->
+<!--
+      <visual name='tag36_11_00100'>
+        <pose>5.5 5.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00100</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <visual name='tag36_11_00101'>
+        <pose>5.5 4.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00101</name>
+          </script>
+        </material>
+      </visual>
+
+
+<!-- Row 6, sixth row of panels along increasing x axis (y:6) -->
+      <!-- Tags 110 to 129 -->
+      <!-- Panel 1 in Row 6 -->
+<!--
+      <visual name='tag36_11_00110'>
+        <pose>0.5 6.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00110</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00111'>
+        <pose>0.5 5.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00111</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 2 in Row 6 -->
+<!--
+      <visual name='tag36_11_00112'>
+        <pose>1.5 6.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00112</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00113'>
+        <pose>1.5 5.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00113</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 3 in Row 6 -->
+<!--
+      <visual name='tag36_11_00114'>
+        <pose>2.5 6.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00114</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00115'>
+        <pose>2.5 5.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00115</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 4 in Row 6 -->
+<!--
+      <visual name='tag36_11_00116'>
+        <pose>3.5 6.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00116</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00117'>
+        <pose>3.5 5.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00117</name>
+          </script>
+        </material>
+      </visual>
+-->
+     <!-- Panel 5 in Row 6 -->
+<!--
+      <visual name='tag36_11_00118'>
+        <pose>4.5 6.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00118</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00119'>
+        <pose>4.5 5.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00119</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 6 in Row 6 -->
+<!--
+      <visual name='tag36_11_00120'>
+        <pose>5.5 6.011 0.3 1.5708 0 3.14159</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00120</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00121'>
+        <pose>5.5 5.989 0.3 1.5708 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00121</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+<!-- Placeholder Row 7, seventh row of panels along increasing x axis (y:7) -->
+      <!-- Tags 130 to 149 -->
+
+<!-- Placeholder Row 8, seventh row of panels along increasing x axis (y:8) -->
+      <!-- Tags 150 to 169 -->
+
+<!-- Placeholder Row 9, seventh row of panels along increasing x axis (y:9) -->
+      <!-- Tags 170 to 189 -->
+
+<!-- Placeholder Row 10, seventh row of panels along increasing x axis (y:10) -->
+      <!-- Tags 190 to 209 -->
+
+<!-- Column 0, outer wall along increasing y axis (x:0) -->
+<!-- Tags 300 to 309 -->
+      <visual name='tag36_11_00300'>
+        <pose>0.011 0.5 0.3 1.5708 0 1.5708</pose> <!-- Y: sets yaw or direction towards the ar tag is pointing to -->
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00300</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00301'>
+        <pose>0.011 1.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00301</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00302'>
+        <pose>0.011 2.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00302</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00303'>
+        <pose>0.011 3.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00303</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00304'>
+        <pose>0.011 4.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00304</name>
+          </script>
+        </material>
+      </visual>
+<!-- 
+      <visual name='tag36_11_00305'>
+        <pose>0.011 5.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00305</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+<!-- Column 1, first row of panels along increasing y axis (x:1) -->
+      <!-- Tags 310 to 329 -->
+      <!-- Panel 1 in Column 1 -->
+<!--
+      <visual name='tag36_11_00310'>
+        <pose>1.011 0.5 0.3 1.5708 0 1.5708</pose> 
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00310</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00311'>
+        <pose>0.989 0.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00311</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 2 in Column 1 -->
+<!-- 
+      <visual name='tag36_11_00312'>
+        <pose>1.011 1.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00312</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00313'>
+        <pose>0.989 1.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00313</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 3 in Column 1 -->
+<!--
+      <visual name='tag36_11_00314'>
+        <pose>1.011 2.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00314</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00315'>
+        <pose>0.989 2.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00315</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 4 in Column 1 -->
+      <visual name='tag36_11_00316'>
+        <pose>1.011 3.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00316</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00317'>
+        <pose>0.989 3.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00317</name>
+          </script>
+        </material>
+      </visual>
+
+     <!-- Panel 5 in Column 1 -->
+<!-- 
+      <visual name='tag36_11_00318'>
+        <pose>1.011 4.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00318</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00319'>
+        <pose>0.989 4.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00319</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 6 in Column 1 -->
+<!-- 
+      <visual name='tag36_11_00320'>
+        <pose>1.011 5.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00320</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00321'>
+        <pose>0.989 5.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00321</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+<!-- Column 2, second row of panels along increasing y axis (x:2) -->
+      <!-- Tags 330 to 349 -->
+      <!-- Panel 1 in Column 2 -->
+<!--
+      <visual name='tag36_11_00330'>
+        <pose>2.011 0.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00330</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00331'>
+        <pose>1.989 0.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00331</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 2 in Column 2 -->
+      <visual name='tag36_11_00332'>
+        <pose>2.011 1.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00332</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00333'>
+        <pose>1.989 1.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00333</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 3 in Column 2 -->
+<!-- 
+      <visual name='tag36_11_00334'>
+        <pose>2.011 2.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00334</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00335'>
+        <pose>1.989 2.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00335</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 4 in Column 2 -->
+<!--
+      <visual name='tag36_11_00336'>
+        <pose>2.011 3.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00336</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00337'>
+        <pose>1.989 3.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00337</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+     <!-- Panel 5 in Column 2 -->
+
+      <visual name='tag36_11_00338'>
+        <pose>2.011 4.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00338</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00339'>
+        <pose>1.989 4.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00339</name>
+          </script>
+        </material>
+      </visual>
+
+
+      <!-- Panel 6 in Column 2 -->
+<!-- 
+      <visual name='tag36_11_00340'>
+        <pose>2.011 5.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00340</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00341'>
+        <pose>1.989 5.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00341</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+<!-- Column 3, third row of panels along increasing y axis (x:3) -->
+      <!-- Tags 350 to 369 -->
+      <!-- Panel 1 in Column 3 -->
+<!-- 
+      <visual name='tag36_11_00350'>
+        <pose>3.011 0.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00350</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00351'>
+        <pose>2.989 0.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00351</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 2 in Column 3 -->
+<!--
+      <visual name='tag36_11_00352'>
+        <pose>3.011 1.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00352</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00353'>
+        <pose>2.989 1.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00353</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 3 in Column 3 -->
+ 
+      <visual name='tag36_11_00354'>
+        <pose>3.011 2.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00354</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00355'>
+        <pose>2.989 2.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00355</name>
+          </script>
+        </material>
+      </visual>
+
+
+      <!-- Panel 4 in Column 3 -->
+
+      <visual name='tag36_11_00356'>
+        <pose>3.011 3.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00356</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00357'>
+        <pose>2.989 3.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00357</name>
+          </script>
+        </material>
+      </visual>
+
+
+     <!-- Panel 5 in Column 3 -->
+<!--
+      <visual name='tag36_11_00358'>
+        <pose>3.011 4.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00358</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00359'>
+        <pose>2.989 4.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00359</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 6 in Column 3 -->
+<!--
+      <visual name='tag36_11_00360'>
+        <pose>3.011 5.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00360</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00361'>
+        <pose>2.989 5.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00361</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+<!-- Column 4, fourth row of panels along increasing y axis (x:4) -->
+      <!-- Tags 370 to 389 -->
+      <!-- Panel 1 in Column 4 -->
+<!--
+      <visual name='tag36_11_00370'>
+        <pose>4.011 0.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00370</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00371'>
+        <pose>3.989 0.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00371</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 2 in Column 4 -->
+
+      <visual name='tag36_11_00372'>
+        <pose>4.011 1.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00372</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00373'>
+        <pose>3.989 1.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00373</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 3 in Column 4 -->
+<!--
+      <visual name='tag36_11_00374'>
+        <pose>4.011 2.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00374</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00375'>
+        <pose>3.989 2.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00375</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 4 in Column 4 -->
+
+      <visual name='tag36_11_00376'>
+        <pose>4.011 3.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00376</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00377'>
+        <pose>3.989 3.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00377</name>
+          </script>
+        </material>
+      </visual>
+
+
+     <!-- Panel 5 in Column 4 -->
+<!--
+      <visual name='tag36_11_00378'>
+        <pose>4.011 4.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00378</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00379'>
+        <pose>3.989 4.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00379</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 6 in Column 4 -->
+<!-- 
+      <visual name='tag36_11_00380'>
+        <pose>4.011 5.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00380</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00381'>
+        <pose>3.989 5.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00381</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+<!-- Column 5, fifth row of panels along increasing y axis (x:5) -->
+      <!-- Tags 390 to 409 -->
+      <!-- Panel 1 in Column 5 -->
+<!-- 
+      <visual name='tag36_11_00390'>
+        <pose>5.011 0.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00390</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00391'>
+        <pose>4.989 0.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00391</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 2 in Column 5 -->
+<!--
+      <visual name='tag36_11_00392'>
+        <pose>5.011 1.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00392</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00393'>
+        <pose>4.989 1.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00393</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+      <!-- Panel 3 in Column 5 -->
+
+      <visual name='tag36_11_00394'>
+        <pose>5.011 2.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00394</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00395'>
+        <pose>4.989 2.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00395</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 4 in Column 5 -->
+<!-- 
+      <visual name='tag36_11_00396'>
+        <pose>5.011 3.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00396</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00397'>
+        <pose>4.989 3.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00397</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+     <!-- Panel 5 in Column 5 -->
+<!--
+      <visual name='tag36_11_00398'>
+        <pose>5.011 4.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00398</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00399'>
+        <pose>4.989 4.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00399</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <!-- Panel 6 in Column 5 -->
+<!--
+      <visual name='tag36_11_00400'>
+        <pose>5.011 5.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00400</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00401'>
+        <pose>4.989 5.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00401</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+<!-- Column 6, sixth row of panels along increasing y axis (x:6) -->
+      <!-- Tags 410 to 429 -->
+      <!-- Panel 1 in Column 6 -->
+<!--
+      <visual name='tag36_11_00410'>
+        <pose>6.011 0.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00410</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <visual name='tag36_11_00411'>
+        <pose>5.989 0.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00411</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 2 in Column 6 -->
+<!--
+      <visual name='tag36_11_00412'>
+        <pose>6.011 1.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00412</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <visual name='tag36_11_00413'>
+        <pose>5.989 1.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00413</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 3 in Column 6 -->
+<!--
+      <visual name='tag36_11_00414'>
+        <pose>6.011 2.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00414</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <visual name='tag36_11_00415'>
+        <pose>5.989 2.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00415</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 4 in Column 6 -->
+<!--
+      <visual name='tag36_11_00416'>
+        <pose>6.011 3.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00416</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <visual name='tag36_11_00417'>
+        <pose>5.989 3.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00417</name>
+          </script>
+        </material>
+      </visual>
+
+     <!-- Panel 5 in Column 6 -->
+<!--
+      <visual name='tag36_11_00418'>
+        <pose>6.011 4.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00418</name>
+          </script>
+        </material>
+      </visual>
+-->
+      <visual name='tag36_11_00419'>
+        <pose>5.989 4.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00419</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- Panel 6 in Column 6 -->
+<!--
+      <visual name='tag36_11_00420'>
+        <pose>6.011 5.5 0.3 1.5708 0 1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00420</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='tag36_11_00421'>
+        <pose>5.989 5.5 0.3 1.5708 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>.2 .2</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://maze_1_tags/materials/scripts</uri>
+            <uri>model://maze_1_tags/materials/textures</uri>
+            <name>tag36_11/00421</name>
+          </script>
+        </material>
+      </visual>
+-->
+
+<!-- Placeholder Column 7, seventh row of panels along increasing y axis (x:7) -->
+      <!-- Tags 430 to 449 -->
+
+<!-- Placeholder Column 8, seventh row of panels along increasing y axis (x:8) -->
+      <!-- Tags 450 to 469 -->
+
+<!-- Placeholder Column 9, seventh row of panels along increasing y axis (x:9) -->
+      <!-- Tags 470 to 489 -->
+
+<!-- Placeholder Column 10, seventh row of panels along increasing y axis (x:10) -->
+      <!-- Tags 490 to 509 -->
+
+
+    </link>
+ </model>
+</sdf>

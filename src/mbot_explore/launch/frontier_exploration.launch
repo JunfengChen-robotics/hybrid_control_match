@@ -1,0 +1,24 @@
+<launch>
+  <!-- Arguments -->
+  <arg name="cmd_vel_topic" default="/cmd_vel" />
+  <arg name="odom_topic" default="/odom" />
+  <arg name="sensor_range" default="8.0" />
+
+  <!-- TurtleBot3 and Gmapping -->
+  <include file="$(find mbot_navigation)/launch/gmapping.launch"/>
+
+  <!-- AMCL -->
+  <include file="$(find mbot_navigation)/launch/amcl.launch"/>
+
+  <!-- move_base -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen"/>
+
+  <!-- frontier_exploration -->
+  <node pkg="frontier_exploration" type="explore_client" name="explore_client" output="screen"/>
+  <node pkg="frontier_exploration" type="explore_server" name="explore_server" output="screen" >
+    <param name="frequency" type="double" value="1.0"/>
+    <param name="goal_aliasing" type="double" value="$(arg sensor_range)"/>
+    <rosparam file="$(find mbot_navigation)/config/mbot/costmap_common_params.yaml" command="load" ns="explore_costmap" />
+    <rosparam file="$(find mbot_explore)/config/frontier_exploration.yaml" command="load" ns="explore_costmap" />
+  </node>
+</launch>

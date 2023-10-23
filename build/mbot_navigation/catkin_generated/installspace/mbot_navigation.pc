@@ -1,0 +1,8 @@
+prefix=/home/cjf/limo_ws/install
+
+Name: mbot_navigation
+Description: Description of mbot_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

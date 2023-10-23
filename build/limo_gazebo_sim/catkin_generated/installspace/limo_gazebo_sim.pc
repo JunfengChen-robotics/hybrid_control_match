@@ -1,0 +1,8 @@
+prefix=/home/cjf/limo_ws/install
+
+Name: limo_gazebo_sim
+Description: Description of limo_gazebo_sim
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lgazebo_ros_ackerman
+Requires: roscpp sensor_msgs
