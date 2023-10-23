@@ -3,8 +3,8 @@
 > 🌟 **项目目标 ：未知场景下的多目标搜索救援** 🚀
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/your-username/awesome-library/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/your-username/awesome-library.svg)](https://github.com/your-username/awesome-library/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/your-username/awesome-library.svg)](https://github.com/your-username/awesome-library/issues)
+[![GitHub stars](https://img.shields.io/github/stars/your-username/awesome-library.svg)](https://github.com/JunfengChen-robotics/hybrid_control_match/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/your-username/awesome-library.svg)](https://github.com/JunfengChen-robotics/hybrid_control_match/issues)
 
 ![Image](figures/intro.png)
 
@@ -135,7 +135,7 @@
 
    # download the packages:
 
-   git clone https://junfengchen-robbotis
+   git clone git@github.com:JunfengChen-robotics/hybrid_control_match.git
 
    ## build the workspace
    cd ..
