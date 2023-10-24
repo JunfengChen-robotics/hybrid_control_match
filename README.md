@@ -62,7 +62,7 @@
 
 - 首先在提供的官方simulation模块对算法进行快速验证，再进一步部署到实物上进行测试和最终比赛；
 
-- 最终比赛虽然在提供的包里场景进行测试，但是下列参数竟会被改变:
+- 最终比赛虽然在提供的包里场景进行测试，但是下列参数会被改变:
   - 比赛场景选择（easy，medium，hard）
   - 机器人初始位置
   - 重要目标颜色随机指定
@@ -114,10 +114,10 @@
 
 该比赛所使用的系统主要开发和测试在下列的系统属性上：
 
-- Ubuntu18.04(请不要使用高于该版本的linux系统)
-- ROS Melodic
-- Gazebo 8.0~11.0
-- Python2 (2.7~2.11)
+- Ubuntu: 18.04 & 20.04
+- ROS: Melodic & Noetic
+- Gazebo: 9.0~11.0
+- Python: 2 & 3
 
 1. 安装ROS Melodic
    
@@ -134,7 +134,8 @@
    catkin_init_workspace
 
    # download the packages:
-
+   # start the git lfs （reference：https://git-lfs.com/）
+   git lfs install
    git clone git@github.com:JunfengChen-robotics/hybrid_control_match.git
 
    ## build the workspace
@@ -245,7 +246,7 @@
         # start the fully auto exploration node
         roslaunch mbot_explore rrt_exploration.launch  
         ```  
-     <div style="display: flex; flex-wrap: wrap;">
+     <!-- <div style="display: flex; flex-wrap: wrap;">
       <div style="flex-basis: 50%; text-align:center;">
         <img src="videos/gmapping.gif" >
         <p>SLAM建图</p>
@@ -261,7 +262,7 @@
       <div style="flex-basis: 50%; text-align:center;">
         <img src="videos/full-exploration.gif" >
         <p>全自主探索</p>
-      </div>
+      </div> -->
     
 
        
