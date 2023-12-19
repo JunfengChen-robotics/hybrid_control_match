@@ -1,17 +1,13 @@
 <launch>
 
-  <include file="$(find mbot_navigation)/launch/gmapping.launch"/>
+    <include file="$(find mbot_navigation)/launch/gmapping.launch"/>
 
-  <!-- 运行move_base节点 -->
-  <include file="$(find mbot_navigation)/launch/move_base.launch" />
-  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find mbot_recoginition)/rviz/find_target.rviz">
-  </node>
+    <!-- 运行move_base节点 -->
+    <include file="$(find mbot_navigation)/launch/move_base.launch" />
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find mbot_recognition)/rviz/find_target.rviz" />
 
-  <!-- 在gazebo环境中添加红色易拉罐 -->
-  
-
-	<node name="exploring_maze" type="exploring_maze.py" pkg="mbot_navigation" output="screen" />
-	<node name="object_detect" type="object_detect.py" pkg="mbot_vision" output="screen"/>
-	<node name="move_to_target" type="move_to_target" pkg="mbot_vision" output="screen" />
-	<node name="tts_subscribe" type="tts_subscribe" pkg="mbot_voice" output="screen" />
+	<node name="exploring_maze" type="exploring_maze.py" pkg="mbot_recognition" output="screen" />
+	<node name="object_detect" type="object_detect.py" pkg="mbot_recognition" output="screen"/>
+  	<node name="move_to_target" type="move_to_target" pkg="mbot_recognition" output="screen" />
+	<!-- <node name="tts_subscribe" type="tts_subscribe" pkg="mbot_voice" output="screen" /> -->
 </launch>

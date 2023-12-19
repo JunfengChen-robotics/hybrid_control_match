@@ -58,8 +58,8 @@ class ExploringMaze():
           self.goal.target_pose.header.stamp = rospy.Time.now()	# 把当前时间发布
           
           if self.exploring_cmd is STATUS_EXPLORING:	# 探索，随机点导航
-              self.goal.target_pose.pose.position.x = random.randint(0,8)
-              self.goal.target_pose.pose.position.y = random.randint(0,9)
+              self.goal.target_pose.pose.position.x = random.uniform(-3,3)
+              self.goal.target_pose.pose.position.y = random.uniform(-2.5,3.5)
           elif self.exploring_cmd is STATUS_CLOSE_TARGET:	# 视觉伺服
             rospy.sleep(0.1)
           elif self.exploring_cmd is STATUS_GO_HOME:	# 返航
