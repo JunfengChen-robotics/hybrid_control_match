@@ -254,10 +254,7 @@
         roslaunch limo_gazebo_sim limo_four_diff.launch 
 
         # start the randomly distributed red cubes
-        rosrun mbot_recognition gen_obj_gazebo.py 
-
-        #待补充！！！！！！！
-
+        roslaunch mbot_recognition find_target.launch
         ``` 
 
 
