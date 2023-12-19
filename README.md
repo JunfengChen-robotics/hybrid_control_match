@@ -245,7 +245,22 @@
 
         # start the fully auto exploration node
         roslaunch mbot_explore rrt_exploration.launch  
-        ```  
+        ``` 
+
+    - **全自主搜索救援**
+      - 操作指令
+        ```bash
+        # start the gazebo simulation
+        roslaunch limo_gazebo_sim limo_four_diff.launch 
+
+        # start the randomly distributed red cubes
+        rosrun mbot_recognition gen_obj_gazebo.py 
+
+        #待补充！！！！！！！
+
+        ``` 
+
+
      <!-- <div style="display: flex; flex-wrap: wrap;">
       <div style="flex-basis: 50%; text-align:center;">
         <img src="videos/gmapping.gif" >
