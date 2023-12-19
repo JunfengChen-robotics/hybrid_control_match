@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mbot_explore_generate_messages_py"
-  "/home/cjf/limo_ws/devel/lib/python2.7/dist-packages/mbot_explore/msg/_PointArray.py"
-  "/home/cjf/limo_ws/devel/lib/python2.7/dist-packages/mbot_explore/msg/__init__.py"
+  "/home/cjf/hybrid_control_match/devel/lib/python2.7/dist-packages/mbot_explore/msg/_PointArray.py"
+  "/home/cjf/hybrid_control_match/devel/lib/python2.7/dist-packages/mbot_explore/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

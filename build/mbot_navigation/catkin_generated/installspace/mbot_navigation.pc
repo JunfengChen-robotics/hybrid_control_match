@@ -1,4 +1,4 @@
-prefix=/home/cjf/limo_ws/install
+prefix=/home/cjf/hybrid_control_match/install
 
 Name: mbot_navigation
 Description: Description of mbot_navigation

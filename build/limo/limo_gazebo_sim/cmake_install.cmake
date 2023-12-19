@@ -1,8 +1,8 @@
-# Install script for directory: /home/cjf/limo_ws/src/limo/limo_gazebo_sim
+# Install script for directory: /home/cjf/hybrid_control_match/src/limo/limo_gazebo_sim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cjf/limo_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/cjf/hybrid_control_match/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cjf/limo_ws/build/limo/limo_gazebo_sim/catkin_generated/installspace/limo_gazebo_sim.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cjf/hybrid_control_match/build/limo/limo_gazebo_sim/catkin_generated/installspace/limo_gazebo_sim.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/limo_gazebo_sim/cmake" TYPE FILE FILES
-    "/home/cjf/limo_ws/build/limo/limo_gazebo_sim/catkin_generated/installspace/limo_gazebo_simConfig.cmake"
-    "/home/cjf/limo_ws/build/limo/limo_gazebo_sim/catkin_generated/installspace/limo_gazebo_simConfig-version.cmake"
+    "/home/cjf/hybrid_control_match/build/limo/limo_gazebo_sim/catkin_generated/installspace/limo_gazebo_simConfig.cmake"
+    "/home/cjf/hybrid_control_match/build/limo/limo_gazebo_sim/catkin_generated/installspace/limo_gazebo_simConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/limo_gazebo_sim" TYPE FILE FILES "/home/cjf/limo_ws/src/limo/limo_gazebo_sim/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/limo_gazebo_sim" TYPE FILE FILES "/home/cjf/hybrid_control_match/src/limo/limo_gazebo_sim/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,12 +59,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_ros_ackerman.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/cjf/limo_ws/devel/lib/libgazebo_ros_ackerman.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/cjf/hybrid_control_match/devel/lib/libgazebo_ros_ackerman.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_ros_ackerman.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_ros_ackerman.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_ros_ackerman.so"
-         OLD_RPATH "/opt/ros/melodic/lib:"
+         OLD_RPATH "/opt/ros/melodic/lib:/usr/local/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_ros_ackerman.so")

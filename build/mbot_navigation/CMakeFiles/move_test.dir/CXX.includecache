@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cjf/limo_ws/src/mbot_navigation/src/move_test.cpp
+/home/cjf/hybrid_control_match/src/mbot_navigation/src/move_test.cpp
 ros/ros.h
 -
 move_base_msgs/MoveBaseAction.h

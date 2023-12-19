@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mbot_explore_generate_messages_cpp"
-  "/home/cjf/limo_ws/devel/include/mbot_explore/PointArray.h"
+  "/home/cjf/hybrid_control_match/devel/include/mbot_explore/PointArray.h"
 )
 
 # Per-language clean rules from dependency scanning.

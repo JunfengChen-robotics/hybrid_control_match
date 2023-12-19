@@ -67,14 +67,14 @@ set(mbot_explore_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(mbot_explore_SOURCE_PREFIX /home/cjf/limo_ws/src/mbot_explore)
-  set(mbot_explore_DEVEL_PREFIX /home/cjf/limo_ws/devel)
+  set(mbot_explore_SOURCE_PREFIX /home/cjf/hybrid_control_match/src/mbot_explore)
+  set(mbot_explore_DEVEL_PREFIX /home/cjf/hybrid_control_match/devel)
   set(mbot_explore_INSTALL_PREFIX "")
   set(mbot_explore_PREFIX ${mbot_explore_DEVEL_PREFIX})
 else()
   set(mbot_explore_SOURCE_PREFIX "")
   set(mbot_explore_DEVEL_PREFIX "")
-  set(mbot_explore_INSTALL_PREFIX /home/cjf/limo_ws/install)
+  set(mbot_explore_INSTALL_PREFIX /home/cjf/hybrid_control_match/install)
   set(mbot_explore_PREFIX ${mbot_explore_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/cjf/limo_ws/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/cjf/hybrid_control_match/install/lib;/home/cjf/hybrid_control_match/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

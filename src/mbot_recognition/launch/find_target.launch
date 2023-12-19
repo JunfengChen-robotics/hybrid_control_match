@@ -1,11 +1,14 @@
 <launch>
 
-    <include file="$(find mbot_navigation)/launch/gmapping.launch"/>
+  <include file="$(find mbot_navigation)/launch/gmapping.launch"/>
 
-    <!-- 运行move_base节点 -->
-   <include file="$(find mbot_navigation)/launch/move_base.launch" />
+  <!-- 运行move_base节点 -->
+  <include file="$(find mbot_navigation)/launch/move_base.launch" />
   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find mbot_recoginition)/rviz/find_target.rviz">
   </node>
+
+  <!-- 在gazebo环境中添加红色易拉罐 -->
+  
 
 	<node name="exploring_maze" type="exploring_maze.py" pkg="mbot_navigation" output="screen" />
 	<node name="object_detect" type="object_detect.py" pkg="mbot_vision" output="screen"/>

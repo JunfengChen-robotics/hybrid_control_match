@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "mbot_slam"
-PROJECT_SPACE_DIR = "/home/cjf/limo_ws/install"
+PROJECT_SPACE_DIR = "/home/cjf/hybrid_control_match/install"
 PROJECT_VERSION = "0.0.0"
