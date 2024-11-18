@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "mbot_navigation"
-PROJECT_SPACE_DIR = "/home/cjf/hybrid_control_match/devel"
+PROJECT_SPACE_DIR = "/home/andy-station/hybrid_control_match/devel"
 PROJECT_VERSION = "0.0.0"

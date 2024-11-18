@@ -1,4 +1,4 @@
-prefix=/home/cjf/hybrid_control_match/devel
+prefix=/home/andy-station/hybrid_control_match/devel
 
 Name: mbot_slam
 Description: Description of mbot_slam

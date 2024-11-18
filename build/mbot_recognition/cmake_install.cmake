@@ -1,8 +1,8 @@
-# Install script for directory: /home/cjf/hybrid_control_match/src/mbot_recognition
+# Install script for directory: /home/andy-station/hybrid_control_match/src/mbot_recognition
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cjf/hybrid_control_match/install")
+  set(CMAKE_INSTALL_PREFIX "/home/andy-station/hybrid_control_match/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cjf/hybrid_control_match/build/mbot_recognition/catkin_generated/installspace/mbot_recognition.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/andy-station/hybrid_control_match/build/mbot_recognition/catkin_generated/installspace/mbot_recognition.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mbot_recognition/cmake" TYPE FILE FILES
-    "/home/cjf/hybrid_control_match/build/mbot_recognition/catkin_generated/installspace/mbot_recognitionConfig.cmake"
-    "/home/cjf/hybrid_control_match/build/mbot_recognition/catkin_generated/installspace/mbot_recognitionConfig-version.cmake"
+    "/home/andy-station/hybrid_control_match/build/mbot_recognition/catkin_generated/installspace/mbot_recognitionConfig.cmake"
+    "/home/andy-station/hybrid_control_match/build/mbot_recognition/catkin_generated/installspace/mbot_recognitionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mbot_recognition" TYPE FILE FILES "/home/cjf/hybrid_control_match/src/mbot_recognition/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mbot_recognition" TYPE FILE FILES "/home/andy-station/hybrid_control_match/src/mbot_recognition/package.xml")
 endif()
 

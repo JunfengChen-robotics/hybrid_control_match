@@ -88,16 +88,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::mbot_explore::PointArray_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::mbot_explore::PointArray_<ContainerAllocator> const>
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
 struct IsMessage< ::mbot_explore::PointArray_<ContainerAllocator> >
   : TrueType
   { };
@@ -105,6 +95,16 @@ struct IsMessage< ::mbot_explore::PointArray_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::mbot_explore::PointArray_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::mbot_explore::PointArray_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::mbot_explore::PointArray_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>

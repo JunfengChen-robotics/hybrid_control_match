@@ -1,8 +1,8 @@
-# Install script for directory: /home/cjf/hybrid_control_match/src/limo/limo_description
+# Install script for directory: /home/andy-station/hybrid_control_match/src/limo/limo_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cjf/hybrid_control_match/install")
+  set(CMAKE_INSTALL_PREFIX "/home/andy-station/hybrid_control_match/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

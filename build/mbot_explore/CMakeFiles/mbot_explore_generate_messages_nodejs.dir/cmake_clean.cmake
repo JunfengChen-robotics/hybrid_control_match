@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "/home/andy-station/hybrid_control_match/devel/share/gennodejs/ros/mbot_explore/msg/PointArray.js"
   "CMakeFiles/mbot_explore_generate_messages_nodejs"
-  "/home/cjf/hybrid_control_match/devel/share/gennodejs/ros/mbot_explore/msg/PointArray.js"
 )
 
 # Per-language clean rules from dependency scanning.

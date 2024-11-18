@@ -1,4 +1,4 @@
-prefix=/home/cjf/hybrid_control_match/install
+prefix=/home/andy-station/hybrid_control_match/install
 
 Name: mbot_explore
 Description: Description of mbot_explore
