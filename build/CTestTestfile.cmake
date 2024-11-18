@@ -6,6 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("limo/limo_description")
+subdirs("mbot_main")
 subdirs("mbot_navigation")
 subdirs("mbot_recognition")
 subdirs("mbot_slam")

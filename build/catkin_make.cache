@@ -1,2 +1,2 @@
-limo/limo_description:limo/limo_gazebo_sim:mbot_explore:mbot_navigation:mbot_recognition:mbot_slam
+limo/limo_description:limo/limo_gazebo_sim:mbot_explore:mbot_main:mbot_navigation:mbot_recognition:mbot_slam
 -DCATKIN_DEVEL_PREFIX=/home/andy-station/hybrid_control_match/devel -DCMAKE_INSTALL_PREFIX=/home/andy-station/hybrid_control_match/install -G Unix Makefiles

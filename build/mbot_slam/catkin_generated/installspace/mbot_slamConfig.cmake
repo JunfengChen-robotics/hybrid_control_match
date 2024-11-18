@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/andy-station/hybrid_control_match/install/lib;/home/andy-station/robocup2022_ws/devel/lib;/home/andy-station/gzu_ws/devel/lib;/home/andy-station/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/andy-station/hybrid_control_match/install/lib;/home/andy-station/catkin_ws/devel/lib;/home/andy-station/ws_vtol/devel/lib;/home/andy-station/ws_sacontrol/devel/lib;/home/andy-station/ws_ego_swarm/devel/lib;/home/andy-station/ws_kimera_semantics/devel/lib;/home/andy-station/ws_hydra/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

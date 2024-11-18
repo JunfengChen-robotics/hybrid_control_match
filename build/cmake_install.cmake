@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/andy-station/hybrid_control_match/build/gtest/cmake_install.cmake")
   include("/home/andy-station/hybrid_control_match/build/limo/limo_description/cmake_install.cmake")
+  include("/home/andy-station/hybrid_control_match/build/mbot_main/cmake_install.cmake")
   include("/home/andy-station/hybrid_control_match/build/mbot_navigation/cmake_install.cmake")
   include("/home/andy-station/hybrid_control_match/build/mbot_recognition/cmake_install.cmake")
   include("/home/andy-station/hybrid_control_match/build/mbot_slam/cmake_install.cmake")

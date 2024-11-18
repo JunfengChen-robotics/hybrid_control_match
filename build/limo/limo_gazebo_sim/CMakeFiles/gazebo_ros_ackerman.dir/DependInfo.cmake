@@ -31,7 +31,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/andy-station/hybrid_control_match/src/limo/limo_gazebo_sim/include"
-  "/home/andy-station/robocup2022_ws/devel/include"
+  "/home/andy-station/catkin_ws/devel/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/gazebo-11"
