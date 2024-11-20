@@ -52,3 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mbot_main" TYPE FILE FILES "/home/andy-station/hybrid_control_match/src/mbot_main/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mbot_main" TYPE PROGRAM FILES "/home/andy-station/hybrid_control_match/build/mbot_main/catkin_generated/installspace/main_exploration.py")
+endif()
+

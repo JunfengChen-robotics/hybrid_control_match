@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = r'/home/andy-station/catkin_ws/devel;/home/andy-station/ws_vtol/devel;/home/andy-station/ws_sacontrol/devel;/home/andy-station/ws_ego_swarm/devel;/home/andy-station/ws_kimera_semantics/devel;/home/andy-station/ws_hydra/devel;/opt/ros/noetic'.split(';')
+            CMAKE_PREFIX_PATH = r'/home/andy-station/hybrid_control_match/devel;/home/andy-station/catkin_ws/devel;/home/andy-station/ws_vtol/devel;/home/andy-station/ws_sacontrol/devel;/home/andy-station/ws_ego_swarm/devel;/home/andy-station/ws_kimera_semantics/devel;/home/andy-station/ws_hydra/devel;/opt/ros/noetic'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []
