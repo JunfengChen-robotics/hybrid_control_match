@@ -1,8 +1,8 @@
-prefix=/home/cjf/hybrid_control_match/devel
+prefix=/home/andy-station/hybrid_control_match/devel
 
 Name: mbot_explore
 Description: Description of mbot_explore
 Version: 1.0.0
-Cflags: -I/home/cjf/hybrid_control_match/devel/include
+Cflags: -I/home/andy-station/hybrid_control_match/devel/include
 Libs: -L${prefix}/lib 
 Requires: message_runtime

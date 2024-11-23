@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "/home/andy-station/hybrid_control_match/devel/share/common-lisp/ros/mbot_explore/msg/PointArray.lisp"
   "CMakeFiles/mbot_explore_generate_messages_lisp"
-  "/home/cjf/hybrid_control_match/devel/share/common-lisp/ros/mbot_explore/msg/PointArray.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
-# Install script for directory: /home/cjf/hybrid_control_match/src/mbot_navigation
+# Install script for directory: /home/andy-station/hybrid_control_match/src/mbot_navigation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cjf/hybrid_control_match/install")
+  set(CMAKE_INSTALL_PREFIX "/home/andy-station/hybrid_control_match/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cjf/hybrid_control_match/build/mbot_navigation/catkin_generated/installspace/mbot_navigation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/andy-station/hybrid_control_match/build/mbot_navigation/catkin_generated/installspace/mbot_navigation.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mbot_navigation/cmake" TYPE FILE FILES
-    "/home/cjf/hybrid_control_match/build/mbot_navigation/catkin_generated/installspace/mbot_navigationConfig.cmake"
-    "/home/cjf/hybrid_control_match/build/mbot_navigation/catkin_generated/installspace/mbot_navigationConfig-version.cmake"
+    "/home/andy-station/hybrid_control_match/build/mbot_navigation/catkin_generated/installspace/mbot_navigationConfig.cmake"
+    "/home/andy-station/hybrid_control_match/build/mbot_navigation/catkin_generated/installspace/mbot_navigationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mbot_navigation" TYPE FILE FILES "/home/cjf/hybrid_control_match/src/mbot_navigation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mbot_navigation" TYPE FILE FILES "/home/andy-station/hybrid_control_match/src/mbot_navigation/package.xml")
 endif()
 

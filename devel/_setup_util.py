@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 # Software License Agreement (BSD License)
@@ -62,7 +62,7 @@ ENV_VAR_SUBFOLDERS = {
     'LD_LIBRARY_PATH' if not IS_DARWIN else 'DYLD_LIBRARY_PATH': ['lib', os.path.join('lib', 'x86_64-linux-gnu')],
     'PATH': PATH_TO_ADD_SUFFIX,
     'PKG_CONFIG_PATH': [os.path.join('lib', 'pkgconfig'), os.path.join('lib', 'x86_64-linux-gnu', 'pkgconfig')],
-    'PYTHONPATH': 'lib/python2.7/dist-packages',
+    'PYTHONPATH': 'lib/python3/dist-packages',
 }
 
 
@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = r'/home/cjf/hybrid_control_match/devel;/opt/ros/melodic'.split(';')
+            CMAKE_PREFIX_PATH = r'/home/andy-station/hybrid_control_match/devel;/home/andy-station/catkin_ws/devel;/home/andy-station/ws_vtol/devel;/home/andy-station/ws_sacontrol/devel;/home/andy-station/ws_ego_swarm/devel;/home/andy-station/ws_kimera_semantics/devel;/home/andy-station/ws_hydra/devel;/opt/ros/noetic'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []

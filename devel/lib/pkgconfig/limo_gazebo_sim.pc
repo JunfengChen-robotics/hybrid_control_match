@@ -1,8 +1,8 @@
-prefix=/home/cjf/hybrid_control_match/devel
+prefix=/home/andy-station/hybrid_control_match/devel
 
 Name: limo_gazebo_sim
 Description: Description of limo_gazebo_sim
 Version: 0.0.1
-Cflags: -I/home/cjf/hybrid_control_match/src/limo/limo_gazebo_sim/include
+Cflags: -I/home/andy-station/hybrid_control_match/src/limo/limo_gazebo_sim/include
 Libs: -L${prefix}/lib -lgazebo_ros_ackerman
 Requires: roscpp sensor_msgs

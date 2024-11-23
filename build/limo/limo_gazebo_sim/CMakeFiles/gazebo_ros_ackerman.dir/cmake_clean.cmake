@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/andy-station/hybrid_control_match/devel/lib/libgazebo_ros_ackerman.pdb"
+  "/home/andy-station/hybrid_control_match/devel/lib/libgazebo_ros_ackerman.so"
   "CMakeFiles/gazebo_ros_ackerman.dir/src/gazebo_ros_ackerman_drive.cpp.o"
-  "/home/cjf/hybrid_control_match/devel/lib/libgazebo_ros_ackerman.pdb"
-  "/home/cjf/hybrid_control_match/devel/lib/libgazebo_ros_ackerman.so"
 )
 
 # Per-language clean rules from dependency scanning.

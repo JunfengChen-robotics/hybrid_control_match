@@ -67,14 +67,14 @@ set(mbot_slam_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(mbot_slam_SOURCE_PREFIX /home/cjf/hybrid_control_match/src/mbot_slam)
-  set(mbot_slam_DEVEL_PREFIX /home/cjf/hybrid_control_match/devel)
+  set(mbot_slam_SOURCE_PREFIX /home/andy-station/hybrid_control_match/src/mbot_slam)
+  set(mbot_slam_DEVEL_PREFIX /home/andy-station/hybrid_control_match/devel)
   set(mbot_slam_INSTALL_PREFIX "")
   set(mbot_slam_PREFIX ${mbot_slam_DEVEL_PREFIX})
 else()
   set(mbot_slam_SOURCE_PREFIX "")
   set(mbot_slam_DEVEL_PREFIX "")
-  set(mbot_slam_INSTALL_PREFIX /home/cjf/hybrid_control_match/install)
+  set(mbot_slam_INSTALL_PREFIX /home/andy-station/hybrid_control_match/install)
   set(mbot_slam_PREFIX ${mbot_slam_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/cjf/hybrid_control_match/install/lib;/home/cjf/hybrid_control_match/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/andy-station/hybrid_control_match/install/lib;/home/andy-station/hybrid_control_match/devel/lib;/home/andy-station/catkin_ws/devel/lib;/home/andy-station/ws_vtol/devel/lib;/home/andy-station/ws_sacontrol/devel/lib;/home/andy-station/ws_ego_swarm/devel/lib;/home/andy-station/ws_kimera_semantics/devel/lib;/home/andy-station/ws_hydra/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(mbot_slam_LIBRARIES ${mbot_slam_LIBRARIES})
 
   _list_append_unique(mbot_slam_LIBRARY_DIRS ${${mbot_slam_dep}_LIBRARY_DIRS})
-  list(APPEND mbot_slam_EXPORTED_TARGETS ${${mbot_slam_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(mbot_slam_EXPORTED_TARGETS ${${mbot_slam_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

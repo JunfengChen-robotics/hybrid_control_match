@@ -1,8 +1,8 @@
-# Install script for directory: /home/cjf/hybrid_control_match/src
+# Install script for directory: /home/andy-station/hybrid_control_match/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cjf/hybrid_control_match/install")
+  set(CMAKE_INSTALL_PREFIX "/home/andy-station/hybrid_control_match/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,94 +49,95 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cjf/hybrid_control_match/install/_setup_util.py")
+   "/home/andy-station/hybrid_control_match/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cjf/hybrid_control_match/install" TYPE PROGRAM FILES "/home/cjf/hybrid_control_match/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/andy-station/hybrid_control_match/install" TYPE PROGRAM FILES "/home/andy-station/hybrid_control_match/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cjf/hybrid_control_match/install/env.sh")
+   "/home/andy-station/hybrid_control_match/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cjf/hybrid_control_match/install" TYPE PROGRAM FILES "/home/cjf/hybrid_control_match/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/andy-station/hybrid_control_match/install" TYPE PROGRAM FILES "/home/andy-station/hybrid_control_match/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cjf/hybrid_control_match/install/setup.bash;/home/cjf/hybrid_control_match/install/local_setup.bash")
+   "/home/andy-station/hybrid_control_match/install/setup.bash;/home/andy-station/hybrid_control_match/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cjf/hybrid_control_match/install" TYPE FILE FILES
-    "/home/cjf/hybrid_control_match/build/catkin_generated/installspace/setup.bash"
-    "/home/cjf/hybrid_control_match/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/andy-station/hybrid_control_match/install" TYPE FILE FILES
+    "/home/andy-station/hybrid_control_match/build/catkin_generated/installspace/setup.bash"
+    "/home/andy-station/hybrid_control_match/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cjf/hybrid_control_match/install/setup.sh;/home/cjf/hybrid_control_match/install/local_setup.sh")
+   "/home/andy-station/hybrid_control_match/install/setup.sh;/home/andy-station/hybrid_control_match/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cjf/hybrid_control_match/install" TYPE FILE FILES
-    "/home/cjf/hybrid_control_match/build/catkin_generated/installspace/setup.sh"
-    "/home/cjf/hybrid_control_match/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/andy-station/hybrid_control_match/install" TYPE FILE FILES
+    "/home/andy-station/hybrid_control_match/build/catkin_generated/installspace/setup.sh"
+    "/home/andy-station/hybrid_control_match/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cjf/hybrid_control_match/install/setup.zsh;/home/cjf/hybrid_control_match/install/local_setup.zsh")
+   "/home/andy-station/hybrid_control_match/install/setup.zsh;/home/andy-station/hybrid_control_match/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cjf/hybrid_control_match/install" TYPE FILE FILES
-    "/home/cjf/hybrid_control_match/build/catkin_generated/installspace/setup.zsh"
-    "/home/cjf/hybrid_control_match/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/andy-station/hybrid_control_match/install" TYPE FILE FILES
+    "/home/andy-station/hybrid_control_match/build/catkin_generated/installspace/setup.zsh"
+    "/home/andy-station/hybrid_control_match/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cjf/hybrid_control_match/install/.rosinstall")
+   "/home/andy-station/hybrid_control_match/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cjf/hybrid_control_match/install" TYPE FILE FILES "/home/cjf/hybrid_control_match/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/andy-station/hybrid_control_match/install" TYPE FILE FILES "/home/andy-station/hybrid_control_match/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cjf/hybrid_control_match/build/gtest/cmake_install.cmake")
-  include("/home/cjf/hybrid_control_match/build/limo/limo_description/cmake_install.cmake")
-  include("/home/cjf/hybrid_control_match/build/mbot_navigation/cmake_install.cmake")
-  include("/home/cjf/hybrid_control_match/build/mbot_recognition/cmake_install.cmake")
-  include("/home/cjf/hybrid_control_match/build/mbot_slam/cmake_install.cmake")
-  include("/home/cjf/hybrid_control_match/build/limo/limo_gazebo_sim/cmake_install.cmake")
-  include("/home/cjf/hybrid_control_match/build/mbot_explore/cmake_install.cmake")
+  include("/home/andy-station/hybrid_control_match/build/gtest/cmake_install.cmake")
+  include("/home/andy-station/hybrid_control_match/build/limo/limo_description/cmake_install.cmake")
+  include("/home/andy-station/hybrid_control_match/build/mbot_main/cmake_install.cmake")
+  include("/home/andy-station/hybrid_control_match/build/mbot_navigation/cmake_install.cmake")
+  include("/home/andy-station/hybrid_control_match/build/mbot_recognition/cmake_install.cmake")
+  include("/home/andy-station/hybrid_control_match/build/mbot_slam/cmake_install.cmake")
+  include("/home/andy-station/hybrid_control_match/build/limo/limo_gazebo_sim/cmake_install.cmake")
+  include("/home/andy-station/hybrid_control_match/build/mbot_explore/cmake_install.cmake")
 
 endif()
 
@@ -148,5 +149,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cjf/hybrid_control_match/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/andy-station/hybrid_control_match/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,0 +1,8 @@
+prefix=/home/andy-station/hybrid_control_match/devel
+
+Name: mbot_main
+Description: Description of mbot_main
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

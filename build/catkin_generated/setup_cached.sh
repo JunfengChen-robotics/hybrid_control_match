@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/opt/ros/melodic/lib:/usr/local/cuda-11.6/lib64'
-export PKG_CONFIG_PATH='/opt/ros/melodic/lib/pkgconfig'
-export PWD='/home/cjf/hybrid_control_match/build'
-export ROS_PACKAGE_PATH='/home/cjf/hybrid_control_match/src:/opt/ros/melodic/share'
+export PWD='/home/andy-station/hybrid_control_match/build'
